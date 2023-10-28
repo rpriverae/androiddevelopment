@@ -27,15 +27,16 @@ public class MainActivity extends AppCompatActivity {
                 counter++;
                 txtCounter.setText(counter+"");
             }
+        });
 
         button2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
             public void onClick(View view) {
                 Log.d( "CLICKER",  "CLICK");
                 counter=0;
                     txtCounter.setText(counter+"");
             }
-        }
-
         });
     }
 }
